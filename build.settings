@@ -17,6 +17,12 @@ settings =
             },
         },
 	},
-    
+    plugins =
+    {
+        ["plugin.universalLinks"] =
+        {
+            publisherId = "tech.scotth"
+        },
+    },
     
 }
