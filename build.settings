@@ -3,19 +3,22 @@ settings =
     
 	iphone =
 	{
+		entitlements = {
+                            ["com.apple.developer.associated-domains"] = {
+                            "applinks:www.mysite.com"
+                            },
+                 },
 		plist =
-        {
-            ["com.apple.developer.associated-domains"] = {
-                "applinks:scotth.tech",
-            },
+        	{
+            
 		    MinimumOSVersion = "8.0",
 		    UIApplicationExitsOnSuspend = false,
 		   
-            NSAppTransportSecurity =
-            {
-                NSAllowsArbitraryLoads = true,
-            },
-        },
+		    NSAppTransportSecurity =
+		    {
+			NSAllowsArbitraryLoads = true,
+		    },
+		},
 	},
     plugins =
     {
